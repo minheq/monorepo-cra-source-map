@@ -1,0 +1,14 @@
+{
+  "name": "@monorepo/component",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "react-dom": "16.8.6",
+    "react": "16.8.6",
+    "typescript": "3.5.2"
+  }
+}
