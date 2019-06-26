@@ -28,14 +28,18 @@ Have a regular lerna setup with 2 packages `cra` and `component`
 When importing from another package, point it to **untranspiled** version, by specifying `module`
 
 ```json
-# packages/component/package.json
-"module": "index.ts",
+// packages/component/package.json
+{
+  ...
+  "module": "index.ts",
+  ...
+}
 ```
 
 Use `react-app-rewired` to customize webpack configuration, to tell it to transpile imports from packages
 
 ```js
-# packages/cra/config-overrides.js
+// packages/cra/config-overrides.js
 const path = require("path");
 
 module.exports = function override(config, env) {
