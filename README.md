@@ -1,4 +1,5 @@
 # Monorepo debugging with Create React App
+By overriding webpack configuration, CRA will generate correct sourcemap for local packages, effectively giving you the ability to debug packages in VSCode from CRA and (haven't tested) correct sourcemap for sentry or bugsnag.
 
 ![Recording](https://user-images.githubusercontent.com/9356633/60150702-ea9d1e00-9803-11e9-99d3-e9a1f2ab6936.gif)
 
