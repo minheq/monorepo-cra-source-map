@@ -6,6 +6,7 @@ export const Component = () => {
   return (
     <div>
       <span>{count}</span>
+      <button onClick={() => setCount(count + 1)}>click</button>
     </div>
   );
 };

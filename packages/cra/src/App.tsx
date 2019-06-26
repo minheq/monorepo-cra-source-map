@@ -1,7 +1,7 @@
 import { Component } from '@monorepo/component';
 import React from 'react';
 
-const App: React.FC = () => {
+const App = () => {
   const text = "text";
 
   return (
