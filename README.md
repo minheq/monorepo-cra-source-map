@@ -59,7 +59,7 @@ module.exports = function override(config, env) {
 
 ### Issue
 
-When you build CRA, you will get a bundle that looks like this
+When you `yarn build` in CRA, you will get a sourcemap that looks like this
 
 ```
 # cra/build/static/js/main.*.chunk.js.map
@@ -99,7 +99,7 @@ and in `sourceContent` the transpiled content of it
 
 ### Solution
 
-By adding the above changes we get this in the sourcemap, we get correct path to `Component.tsx` and the sourceContent is what it looks like
+By applying the workaround, we get correct path to `Component.tsx` and its `sourceContent`
 
 ```
 {
